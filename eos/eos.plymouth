@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=eos theme
+Description=A Simple and Elegant Plymouth that Reflects You
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/eos
+ScriptFile=/usr/share/plymouth/themes/eos/eos.script
