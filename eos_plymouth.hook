@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = plymouth
+
+[Action]
+Description = Update plymouth dracut.
+When = PostTransaction
+Exec = sed -i "s/mkinitcpio -P/dracut-rebuild/g" /usr/lib/plymouth/plymouth-update-initrd
